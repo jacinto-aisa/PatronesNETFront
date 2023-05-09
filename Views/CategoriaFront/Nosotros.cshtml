@@ -1,0 +1,214 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<link href="~/flexslider2.css" rel="stylesheet" />
+<div class="container space">
+    <main>
+        <!-- La Empresa-->
+        <div class="space-around space-bot">
+            <!-- Texto empresa -->
+            <div class="col-md-1">
+                <div>
+                    <h3 class='cab-tit'>La empresa</h3>
+                    <p>
+                        Desaprendiendo surge de la necesidad de un nuevo tipo de formación. De proporcionar a las empresas y profesionales que quieren innovar, el apoyo de formación necesario para que lo hagan efectivo.
+                    </p>
+                    <p>
+                        Muchas organizaciones siguen haciendo las cosas “como siempre se han hecho” y eso genera a las empresas que quieren mejorar y progresar, la necesidad de una formación para alcanzar los objetivos de innovación y progreso.
+                    </p>
+                    <p>
+                        Usando su experiencia y nuestro método, se consiguen cambios revolucionarios que aportan eficiencia y modernidad. Con esa idea en mente, surgió DESAPRENDIENDO.
+                    </p>
+                    <p>
+                        La innovación debe de ser uno de los pilares para aumentar la productividad de las empresas, solamente de esta forma podremos mejorar nuestros sistemas de gestión, producción y control.
+                    </p>
+                    <p>
+                        <strong>Desaprender</strong>, no olvidar lo que conocemos y sabemos, pero <strong>Desaprender</strong> la forma, la mecánica, para eso estamos, para apoyar a las grandes y no tan grandes empresas. ¿Quieres Desaprender y así lograr mejores resultados para ser más competitiva tu empresa?
+                    </p>
+                </div>
+            </div>
+            <!-- Imagen Empresa -->
+            <div class="col-md-2">
+                <img src="/images/Nosotros/Desaprender.jpg" class="img-fluid">
+            </div>
+        </div>
+        <!-- Fin La Empresa-->
+        <!-- El equipo -->
+        <div class="space-around space-bot orden">
+            <!-- Imagen equipo -->
+            <div class="col-md-1">
+                <div class="space-around space-bot orden">
+                    <img src="~/images/Nosotros/Jacinto.jpg" alt="" class="img-fluid">
+                    <img src="~/images/Nosotros/Foto Elisa.jpg" alt="" class="img-fluid">
+                    <img src="~/images/Nosotros/Miguel.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- Texto equipo -->
+            <div class="col-md-4">
+                <div>
+                    <h3 class='cab-tit'>El equipo</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/jacintoaisa/">
+                            <strong>Jacinto Aisa Ibañez</strong>
+                        </a>más de 25 años de experiencia combinando el desarrollo de proyectos en diferentes tecnologías con la formación. Microsoft Certified Trainer desde 2.009 hasta la actualidad
+                        Su amplia experiencia le hace abarcar muchas áreas, informáticas y no informáticas. Contabilidad, Recursos Humanos, Producción, Calidad basandose en esos conocimientos y
+                        dominio de BigData, Programación Web, Programación en Moviles, SQL Server, Power BI, Microcontenedores, Servicios Web, Sharepoint y un largo etc, hace que la formación se oriente
+                        siempre hacía un resultado concreto que aporte valor al alumno y la empresa.
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/elisa-f-2635a247/">
+                            <strong>Elisa Fernando Gandú</strong>
+                        </a>Administrativa - Experta en Gestión de Procesos de Back Office Administrativo - Contabilidad + Finanzas + Inglés B1 + Excel + MS Office- Comunicación + RRSS – Gestión de talento
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/elisa-f-2635a247/">
+                            <strong>Miguel Lafuente</strong>
+                        </a>Técnico superior en PRL y RRHH con más de 5 años de experiencia, ayudo a desarrollarse a las empresas."
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Fin El equipo -->
+    </main>
+</div>
+<!-- Texto clientes-->
+<h3 class='cab-tit left'>Nuestros clientes</h3>
+<div class='col-sm-0'>
+    <p>
+        Desaprendiendo ha colaborado con muchas de las empresas más importantes de nuestra comunidad autónoma, Aragón, imponiéndose a grandes compañías gracias a nuestra calidad y seriedad tanto en el ámbito formativo como en desarrollo. Siempre formamos clientes autónomos, que no dependan de nosotros, sino que una vez realizado el trabajo y puesto en marcha, sean ellos quienes mantengan las aplicaciones.
+    </p>
+    <p class='space-bot'>
+        Nuestros mejores embajadores siempre serán nuestros clientes y nuestros casos de éxito.<br />
+        Grandes compañías han confiado en nosotros.
+    </p>
+</div>
+<!-- Fin Texto clientes-->
+<!-- Carousel clientes-->
+@await Component.InvokeAsync("ClienteComponent", new Cliente())
+
+<!-- Texto Certificaciones-->
+<h3 class='cab-tit left'>Certificaciones</h3>
+<div class='col-sm-0'>
+    <p>
+        Las Certificaciones que disponemos, dan al cliente la seguridad de la amplitud de nuestros conocimientos generando con ello una garantía de que nuestros cursos van a ser impartidos con calidad certificada.
+    </p>
+    <p class='space-bot'>
+        A continuación mostramos las principales certificaciones de que disponemos. Principalmente las de Microsoft que es nuestra área principal de formación.
+    </p>
+</div>
+<!-- Fin Texto Certificaciones-->
+<!-- Carrusel Certificaciones -->
+<div class='container space-bot'>
+    <div class='flexslider flexcli'>
+        <ul class='slides'>
+            <!-- Cromo Certificacion. Uno por cada certificado que se publique -->
+            <li>
+                <img src="/images/Nosotros/Certificaciones/01.png" />
+            </li>
+            <!-- Fin Cromo Certificacion -->
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/10.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/11.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/02.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/06.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/05.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/07.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/08.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/15.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/18.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/19.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/16.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/20.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/17.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/21.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/04.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/03.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/09.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/12.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/13.png">
+            </li>
+            <li>
+                <img class="card-img-top" src="~/images/Nosotros/Certificaciones/14.png">
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Fin Carrusel Certificaciones -->
+<!-- Texto Alumnos -->
+<h3 class='cab-tit left'>Testimonios</h3>
+<div class='col-sm-0'>
+    <p>
+        <strong>Que mejor recomendación que la que pueden hacer nuestros alumnos </strong>,
+        las personas que han recibido nuestros cursos.
+    </p>
+    <p class='space-bot'>
+        A continuación mostramos pequeños videos de algunos de nuestros alumnos.
+    </p>
+</div>
+<!-- Fin Texto Alumnos -->
+<!-- Catalogo Videos -->
+<div class="container space">
+    <main>
+        <div class="flex-start-justi">
+            <!-- Cromo Video. Uno por cada video que se publique -->
+            <div class="col-pq">
+                <video controls="controls">
+                    <source src="/images/Nosotros/Testimonios/Andrea%20Silas.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <br />
+            <!-- Fin Cromo Video -->
+            <div class="col-pq">
+                <video controls="controls">
+                    <source src="/images/Nosotros/Testimonios/RaquelDefinitivo.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <br />
+            <div class="col-pq">
+                <video controls="controls">
+                    <source src="/images/Nosotros/Testimonios/samanta.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <br />
+        </div>
+    </main>
+</div>
+<!-- Fin Catalogo Alumnos -->

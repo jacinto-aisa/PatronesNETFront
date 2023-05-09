@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Desaprendiendo.Models.DomainModel.SubCategoria>
+
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+
+@await Component.InvokeAsync("BreadCumComponent", Model.ToList().First())
+@await Component.InvokeAsync("DeckCardComponent", Model.ToList().First())
+
+
+
+
+

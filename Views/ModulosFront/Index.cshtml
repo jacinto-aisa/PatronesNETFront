@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Desaprendiendo.Models.DomainModel.Modulo>
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<script>
+			$(function(){
+				$(".accordion-titulo").click(function(e){
+				e.preventDefault();
+				var contenido=$(this).next(".accordion-content");
+					if(contenido.css("display")=="none"){ //open
+						contenido.slideDown(250);
+						$(this).addClass("open");
+					}
+					else{ //close
+						contenido.slideUp(250);
+						$(this).removeClass("open");
+					}
+				});
+			});
+</script>
+@if (Model.Count() > 0)
+{
+    @await Component.InvokeAsync("BreadCumComponent", Model.ToList().First())
+    @await Component.InvokeAsync("CardModulosComponent", Model.ToList().First())
+}
+
+
+
+
+

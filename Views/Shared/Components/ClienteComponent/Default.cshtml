@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Desaprendiendo.Models.Cliente>
+<div class='container space-bot'>
+    <div class='flexslider flexcli'>
+        <ul class='slides'>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.ImagenGrande)">
+                    <h4 class="card-title">@item.RazonSocial</h4>
+                    @Html.Raw(item.ComentarioHtml)
+                </li>
+            }
+            </ul>
+        </div>
+    </div>
+</div>

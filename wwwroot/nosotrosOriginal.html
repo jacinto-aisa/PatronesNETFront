@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Analytics
+	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/1328B9C1-5AC5-BF4B-9615-51AEE28F9769/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/BCAA219C-BED5-AA4C-BAE2-5FA9FAE3E39D/abn/main.css"/><script>
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-115866163-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sobre Nosotros. Desaprendiendo.net - Formación Tic a medida</title>
+	<link rel="stylesheet" href="style.css" />
+	<!-- menu -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			var pull = $('#pull');
+			menu = $('div ul');
+			menuHeight = menu.height();
+
+			$(pull).on('click', function (e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+		});
+	</script>
+	<!-- Carousel -->
+	<link rel="stylesheet" href="css/flexslider2.css" type="text/css" media="screen" />
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+	<script defer src="carrusel/js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				animationLoop: false,
+				itemWidth: 350,
+				itemMargin: 5,
+			});
+		});
+	</script>
+</head>
+	<body>
+		<header>
+			<!-- menu -->
+			<nav class='marino-bg'>
+				<div class="navbar space-between">
+					<h1>desaprendiendo.net Formación Tic a medida</h1>
+					<div id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="/">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/tripartita">Tripartita</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/metodologia">Metodologia</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/cursos">Cursos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link activo" href="/nosotros">Nosotros</a>
+							</li>
+							<br clear="all" />
+						</ul>
+						<a id="pull" href="#"></a>
+					</div>
+				</div>
+			</nav>
+			<!-- Fin menu -->
+			<!-- Logo y Buscador -->
+			<nav class="space-between total">
+				<!-- Logo -->
+				<a class="navbar-brand" href="/">
+					<img src="/images/desaprendiendo2.png" alt="Icono de Marca">
+				</a>
+				<!-- Buscador -->
+				<form class="form-inline flex-start" method="post" action="/SearchResults">
+					<div class="form-group">
+						<input id="searchedText" name="searchedText" type="text" value="" />
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Búsqueda</button>
+					</div>
+					<input name="__RequestVerificationToken" type="hidden" value="CfDJ8LSSaz6ZNBJMvsFOxPYZhA9RxH0clpUJaNfEuJxG0de7Z7DvUKEQzGaNj6TiwhRtxuLHBbb1ZgGs0P43WlJAryI44Th_wHh0G-hyjMHMPWbAN39kQ0wYr3YJ27bQVDRGmOnE-LrEaiPAY9y10pqjzZE" />
+				</form>
+			</nav>
+			<!-- Fin Logo y Buscador -->
+		</header>
+		<div class="container space">
+			<main>
+				<!-- La Empresa-->
+				<div class="space-around space-bot">
+					<!-- Texto empresa -->
+					<div class="col-md-1">
+						<div>
+							<h3 class='cab-tit'>La empresa</h3>
+							<p>
+								Desaprendiendo surge de la necesidad de un nuevo tipo de formación. De proporcionar a las empresas
+								y profesionales que quieren innovar, el apoyo de formación necesario para que lo hagan.
+							</p>
+							<p>
+								Muchas empresas siguen haciendo las cosas “como siempre se han hecho”, por tanto, vimos que una de las
+								necesidades de las empresas que quieren mejorar y progresar era una formación que usando su experiencia y nuestro
+								método, les permitiera hacerlo, con esa idea en mente, surgió desaprendiendo.<br />
+								La innovación debe de ser uno de los pilares para aumentar la productividad de las empresas, solamente de esta forma podremos mejorar
+								nuestros sistemas de gestión, producción y control. <br />
+								<strong>Desaprender</strong>, no olvidar lo que conocemos y sabemos, pero desaprender la forma, la mecánica, para eso estamos,
+								para apoyar a las grandes y no tan grandes empresas. <br />
+							</p>
+						</div>
+					</div>
+					<!-- Imagen Empresa -->
+					<div class="col-md-2">
+						<img src="/images/Nosotros/Desaprender.jpg" class="img-fluid">
+					</div>
+				</div>
+				<!-- Fin La Empresa-->
+				<!-- El equipo -->
+				<div class="space-around space-bot orden">
+					<!-- Imagen equipo -->
+					<div class="col-md-2">
+						<img src="/images/Nosotros/FotoStaff.jpg" alt="" class="img-fluid">
+					</div>
+					<!-- Texto equipo -->
+					<div class="col-md-1">
+						<div>
+							<h3 class='cab-tit'>El equipo</h3>
+							<p>
+								 <a href="https://www.linkedin.com/in/anabel-garcia-pascual/">
+								<strong>Ana I. García Pascual</strong>
+								</a>, tras 5 años de experiencia gestionando la subvención de 50 pymes.
+								Aporto el valor de bonificar la formación a trabajadores en las empresas interesadas. Amplia experiencia
+								en asesoramiento, captación de alumnos, calidad, subvenciones, búsqueda de docentes y la supervisión completa en todos los ciclos de vida de la
+								docencia.Experta en SEO (Google Analytics), asidua a Google Activate y Marketing digital.
+							</p>
+							<p>
+								<a href="https://www.linkedin.com/in/jacintoaisa/">
+								<strong>Jacinto Aisa Ibañez</strong>
+								</a>más de 25 años de experiencia combinando
+								el desarrollo de proyectos en diferentes tecnologías. Las tecnologías que domina son muy amplias, incluyendo:
+								BigData, Programación Web, Programación en Moviles, SQL Server, Power BI, Microcontenedores, Servicios Web, Sharepoint y
+								un largo Etc.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fin El equipo -->
+			</main>
+		</div>
+		<!-- Texto clientes-->
+		<h3 class='cab-tit left'>Nuestros clientes</h3>
+		<div class='col-sm-0'>
+			<p>
+				Desaprendiendo ha colaborado en su corta vida con muchas de las empresas más importantes de nuestra comunidad autónoma, Aragón.<br />
+				Imponiendose a grandes empresas, gracias a nuestra calidad y seriedad tanto en el ámbito formátivo como en desarrollo.<br />
+				En estos últimos, siempre formamos a nuestros clientes para no tener clientes cautivos que dependen de nosotros, sino que una vez realizado el trabajo
+				y puesto en marcha, sean ellos quienes mantengan las aplicaciones.<br />
+			</p>
+			<p class='space-bot'>
+				Jacinto Aisa, como formador y desarrollador independiente también he incluimos en esta relación de Clientes. En ellos hemos intentado llevar
+				nuestro método de formación y colaborar con ellos tanto en temas de formación de sus empleados, como en colaboraciones de desarrollo de software,
+				procesos de limpieza y bigData. <br />
+				Nuestros mejores embajadores siempre serán nuestros clientes y nuestros casos de éxito.<br />
+				Grandes compañías han confiado en nosotros.
+			</p>
+		</div>
+		<!-- Fin Texto clientes-->
+		<!-- Carousel clientes-->
+		<div class='container space-bot'>
+			<div class='flexslider flexcli'>
+				<ul class='slides'>
+					<li>
+						<img src="/images/Nosotros/Clientes/Adidas.png" alt="Adidas">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.adidas.es/">
+							<h4 class="card-title">Adidas</h4>
+						</a>
+						<p>SQL Server, .NET y Xamarin, Colaboración Proyectos Desarrollo en SSIS, Integración en Almacenes de distribución</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/AtlasCopco.png" alt="Atlas">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.atlascopco.com/es-es">
+							<h4 class="card-title">Atlas Copco</h4>
+						</a>
+						<p>Formación en Xamarin, colaboración en cuadros de mando con PowerBI. Trabajo en la nube con dataflows y dashboards</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/CasTraining.png" alt="CasTraining">
+						<a href="https://www.cas-training.com">
+							<h4 class="card-title">Cas-Training</h4>
+						</a>
+						<p>Multitud de cursos de formación, .NET, Android, Xamarin, ASP.NET, SQL Server, Liferay, Gestor de Contenidos, Navision</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/CEOE_Aragon.png" alt="CEOE_Aragon">
+						<a target="_blank" rel="noopener noreferrer" href="https://ceoearagon.es/">
+							<h4 class="card-title">CEOE Aragon</h4>
+						</a>
+						<p>Cursos de Formación, Excel Avanzado, Macros de Excel y PowerView, PowerMaps y PowerPivot</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/compusof.png" alt="CompuSof">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.compusof.com/">
+							<h4 class="card-title">Compusof</h4>
+						</a>
+						<p>BIG DATA, BI, para matemáticos, estádisticos, curso de 600 horas. Colocación de todos los alumnos</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/CristaleriaCogullada.png" alt="Cristaleria Cogullada">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.cogullada.com/">
+							<h4 class="card-title">Cristaleria Cogullada</h4>
+						</a>
+						<p>Formación y Colaboración en Programación Windows Forms para gestión de Almacén. </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/Formatel.png" alt="Formatel">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.formatel.es/">
+							<h4 class="card-title">Formatel</h4>
+						</a>
+						<p>Cursos para desempleados, SQL Server y Bases de Datos. Certificados de profesionalidad informática </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/hiberus.png" alt="Hiberus">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.hiberus.com/">
+							<h4 class="card-title">Hiberus</h4>
+						</a>
+						<p>Cursos para profesionales WEB, MVC Core, participación en Hiberus University para formación para vueling</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/IncolMotos.png" alt="Incolmotos">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.incolmotos-yamaha.com.co/">
+							<h4 class="card-title">Incolmotos Colombia</h4>
+						</a>
+						<p>Dynamics NAV 2018, Curso de dos meses, Formación en Programación, Producción, Compras, Ventas, Contabilidad</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/inycom.png" alt="Inycom">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.inycom.es/">
+							<h4 class="card-title">Inycom</h4>
+						</a>
+						<p>Cursos en SQL Server, SSAS, SSRS, SSIS, Optimización de SQL, MVC Core, Colaboración en servicios ENDESA</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/desfufor.png" alt="Cristaleria Cogullada">
+						<a target="_blank" rel="noopener noreferrer" href="http://www.desfufor.es/">
+							<h4 class="card-title">Desfufor</h4>
+						</a>
+						<p>Android, Programación Móvil, Xamarin, WordPress, Liferay, .NET, SQL, Navision y Unix. </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/LogoEFOR.png" alt="EFOR">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.efor.es/">
+							<h4 class="card-title">EFOR</h4>
+						</a>
+						<p>IT ESSENTIALS EN ADMINISTRADOR DE BASES DE DATOS Varias Ediciones, Linux y Sistemas Operativos</p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/OceanoAtlántico.png" alt="Oceano Atlantico">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.oceanoatlantico.org/">
+							<h4 class="card-title">Oceano Atlántico</h4>
+						</a>
+						<p>Desarrollo en Java de Páginas Web, Programación en .NET y SQL, HTML5 y TypeScript </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/Pue.png" alt="PUE">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.pue.es/">
+							<h4 class="card-title">PUE</h4>
+						</a>
+						<p>Gran Cantidad de Cursos, ASP.NET, Azure, SQL Server, en CTAs (Aragon, Galicia, Valencia y Madrid) </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/quelinka.png" alt="Quelinka">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.quelinka.com/">
+							<h4 class="card-title">Quelinka</h4>
+						</a>
+						<p>Cursos de Xamarin adaptado a Producción, MVC5, Colaboración en Red Social de Vinos </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/vueling.png" alt="Vueling">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.telefonica.com/es/">
+							<h4 class="card-title">Vueling</h4>
+						</a>
+						<p>5 Ediciones de Vueling University, 400horas, Formación para profesionales senior, patrones </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/SanValero.png" alt="San Valero">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.sanvalero.es/">
+							<h4 class="card-title">San Valero</h4>
+						</a>
+						<p>Liferay, Programacion Web Java, JSP, Spring, Hibernate, Certificados profesionalidad </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/Sesé.png" alt="Sese">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.sanvalero.es/">
+							<h4 class="card-title">Transportes Sesé</h4>
+						</a>
+						<p>Cursos de preparación para programadores y diseñadores, incorporación en plantilla </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/SanMiguel.png" alt="San Miguel">
+						<a target="_blank" rel="noopener noreferrer" href="https://ce-sanmiguel.com/">
+							<h4 class="card-title">Centro Estudios San Miguel</h4>
+						</a>
+						<p>Cursos de Certificados Profesionalidad, Seguridad Informática, Redes, Informática básica </p>
+					</li>
+					<li>
+						<img src="/images/Nosotros/Clientes/Telefonica.png" alt="Telefonica">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.telefonica.com/es/">
+							<h4 class="card-title">Telefonica</h4>
+						</a>
+						<p>Curso de BIG DATA y BI, 600horas, 5 Ediciones de Machine Learning OnLine en Miriadax </p>
+					</li>
+					<li>
+						<img class="card-img-top " src="/images/Nosotros/Clientes/Logo-Indcresa.png" alt="Telefonica">
+						<a target="_blank" rel="noopener noreferrer" href="https://indcresa.com/">
+							<h4 class="card-title">Indcresa</h4>
+						</a>
+						<p>Consultoria para optimización de los motores de datos de SQL Server </p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Fin Carrusel Clientes -->
+		<!-- Texto Certificaciones-->
+		<h3 class='cab-tit left'>Certificaciones</h3>
+		<div class='col-sm-0'>
+			<p>
+				Certificaciones de las que disponemos , dan al cliente la seguridad de que la amplitud de nuestros conocimientos generando con ello una garantía de que nuestros cursos van a ser impartidos con calidad certificada.
+			</p>
+			<p class='space-bot'>
+				A continuación mostramos las principales certificaciones de que disponemos. Principalmente las de Microsoft que es nuestra área principal de formación.
+			</p>
+		</div>
+		<!-- Fin Texto Certificaciones-->
+		<!-- Carrusel Certificaciones -->
+		<div class='container space-bot'>
+			<div class='flexslider flexcli'>
+				<ul class='slides'>
+					<!-- Cromo Certificacion. Uno por cada certificado que se publique -->
+					<li>
+						<img src="/images/Nosotros/Certificaciones/01.png" />
+					</li>
+					<!-- Fin Cromo Certificacion -->
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/10.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/11.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/02.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/06.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/05.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/07.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/08.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/15.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/18.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/19.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/16.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/20.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/17.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/21.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/04.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/03.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/09.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/12.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/13.png">
+					</li>
+					<li>
+						<img class="card-img-top" src="/images/Nosotros/Certificaciones/14.png">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Fin Carrusel Certificaciones -->
+		<!-- Texto Alumnos -->
+		<h3 class='cab-tit left'>Testimonios</h3>
+		<div class='col-sm-0'>
+			<p>
+				<strong>Que mejor recomendación que la que pueden hacer nuestros alumnos </strong>,
+				las personas que han recibido nuestros cursos.
+			</p>
+           <p class='space-bot'>
+				A continuación mostramos pequeños videos de algunos de nuestros alumnos.
+			</p>
+		</div>
+		<!-- Fin Texto Alumnos -->
+		<!-- Catalogo Videos -->
+		<div class="container space">
+			<main>
+				<div class="flex-start-justi">
+					<!-- Cromo Video. Uno por cada video que se publique -->
+					<div class="col-pq">
+						<video controls="controls">
+							<source src="/images/Nosotros/Testimonios/Andrea%20Silas.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<br />
+					<!-- Fin Cromo Video -->
+					<div class="col-pq">
+						<video controls="controls">
+							<source src="/images/Nosotros/Testimonios/RaquelDefinitivo.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<br />
+					<div class="col-pq">
+						<video controls="controls">
+							<source src="/images/Nosotros/Testimonios/samanta.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<br />
+				</div>
+			</main>
+		</div>
+		<!-- Fin Catalogo Alumnos -->
+		<!-- Pie -->
+		<footer class="card-footer space">
+			<div class="container">
+				&copy; 2020 Desaprendiendo | <a href="/CategoriaFront/Privacy">Privacy</a><br>
+				<a href="https://anasaci.com" target='_blank'>Diseño web anasaci</a>
+			</div>
+		</footer>
+		<!-- Fin Pie -->
+	</body>
+</html>

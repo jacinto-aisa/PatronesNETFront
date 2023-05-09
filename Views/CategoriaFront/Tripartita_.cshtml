@@ -1,0 +1,235 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<body>
+    <header>
+        <!-- menu -->
+        <nav class='marino-bg'>
+            <div class="navbar space-between">
+                <h1>desaprendiendo.net Formación Tic a medida</h1>
+                <div id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activo" href="/tripartita">Tripartita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/metodologia">Metodologia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/nosotros">Nosotros</a>
+                        </li>
+                        <br clear="all" />
+                    </ul>
+                    <a id="pull" href="#"></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin menu -->
+        <!-- Logo y Buscador -->
+        <nav class="space-between total">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="/images/desaprendiendo2.png" alt="Icono de Marca">
+            </a>
+            <!-- Buscador -->
+            <form class="form-inline flex-start" method="post" action="/SearchResults">
+                <div class="form-group">
+                    <input id="searchedText" name="searchedText" type="text" value="" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Búsqueda</button>
+                </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8LSSaz6ZNBJMvsFOxPYZhA9RxH0clpUJaNfEuJxG0de7Z7DvUKEQzGaNj6TiwhRtxuLHBbb1ZgGs0P43WlJAryI44Th_wHh0G-hyjMHMPWbAN39kQ0wYr3YJ27bQVDRGmOnE-LrEaiPAY9y10pqjzZE" />
+            </form>
+        </nav>
+        <!-- Fin Logo y Buscador -->
+    </header>
+
+    <!-- Tripartita -->
+    <div class="container space">
+        <main>
+            <div class="space-around space-bot">
+                <!-- Texto Tripartita -->
+                <div class="col-md-1">
+                    <div>
+                        <h3 class='cab-tit'>Tripartita</h3>
+                        <p>
+                            <strong>Asociación de trabajadores autónomos:</strong> Inscrito en el Registro Estatal de Asociaciones Profesionales de Trabajadores Autónomos.
+                        </p>
+                        <p>
+                            <strong>En desaprendiendo, estamos capacitados para llevar la gestión de la tripartita de su empresa.</strong> Lo Unico que necesitaremos será su autorización para gestionarlo en la plataforma web
+                        </p>
+                        <p>
+                            Llame sin compromiso al telefono: <a href='tel:635685756' title='Llame sin compromiso'>635 685 756</a> y pregunte por Anabel que es nuestra experta en tripartita.
+                        </p>
+                    </div>
+                </div>
+                <!-- Icono enlace a correo -->
+                <div class="col-md-2">
+                    <a href='mailto:desaprendiendo.profesores@gmail.com' title='Resolvemos tus dudas'>
+                        <img src="/images/ico-mail.jpg" class="img-fluid mov">
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Fin Tripartita -->
+    <!-- FUNDAE -->
+    <main class='amarillo-bg'>
+        <div class="space">
+            <!-- Texto FUNDAE -->
+            <h3 class='cab-tit left negro-tx'>FUNDAE</h3>
+            <div class="col-sm-0">
+                <p>
+                    La <strong>Fundación Estatal para la Formación en el Empleo (FUNDAE)</strong> es una fundación del sector público estatal española encargada de impulsar y coordinar la ejecución de las políticas públicas en materia de Formación Profesional, en el ámbito del empleo y las relaciones laborales. En su patronato participan las organizaciones sindicales (CCOO, UGT, CIG) y empresariales (CEOE, CEPYME) más representativas, las comunidades autónomas y la Administración General del Estado, a través del Secretaría de Estado de Empleo.
+                </p>
+                <p>
+                    Hasta el año 2015, cuando se reforma el sistema de formación para el empleo, su denominación era Fundación Tripartita para la Formación en el Empleo.
+                </p>
+                <p>
+                    El Sistema de Formación para el Empleo tiene la misión de formar y capacitar a las personas para el trabajo y actualizar sus competencias y conocimientos a lo largo de su vida profesional.
+                </p>
+                <p>
+                    La <strong>Formación para el Empleo</strong> se financia con los recursos procedentes de la recaudación de la cuota finalista de formación profesional que empresas y trabajadores aportan a la Seguridad Social (0,7% sobre la base de cotización por contingencias profesionales del que el 0,6% lo aporta la empresa y el 0,1% restante, el trabajador). Se suman también otros recursos procedentes del Fondo Social Europeo (en el caso de las Comunidades Autónomas), según la regulación publicada en el BOE  la Ley 30/2015.
+                </p>
+                <p>
+                    Esta entidad gestiona los cursos para trabajadores que se pueden ser bonificados a través de la cuota de formación profesional de la Seguridad Social
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Fin FUNDAE -->
+    <!-- Servicios -->
+    <div class="container space">
+        <main>
+            <h3 class='cab-tit'>Servicios</h3>
+            <div class="flex-start-justi">
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser1.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Prestar apoyo técnico a las Administraciones Públicas y a las organizaciones empresariales y sindicales presentes en la Comisión Estatal de Formación y en el Patronato de la Fundación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser2.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Colaborar y asistir técnicamente al Servicio Público de Empleo Estatal en sus actividades de gestión de las iniciativas de formación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser3.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Apoyar al Servicio Público en el diseño e implantación de medios telemáticos para que las empresas comuniquen el inicio y finalización de la formación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser4.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Elaboración de propuestas de resoluciones normativas relativas al subsistema de formación profesional para el empleo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser5.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Contribuir al impulso y difusión de la formación profesional para el empleo entre las empresas y los trabajadores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser6.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Asistencia a las Pymes para facilitar su acceso a la formación profesional para el empleo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser7.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Colaborar con el SEPE en la mejora de la calidad de la formación, en la elaboración de estadísticas sobre formación y en la creación y mantenimiento del Registro estatal de centros de formación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-pq servis">
+                    <div class="card space-around">
+                        <img class="card-img-ico" src='images/ico-ser8.png' />
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" aria-labelledby="heading-example">
+                                    <p>
+                                        Participar en foros nacionales e internacionales relacionados con la formación profesional para el empleo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </main>
+    </div>
+</body>
+</html>

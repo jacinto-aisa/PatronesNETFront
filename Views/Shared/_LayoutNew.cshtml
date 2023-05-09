@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desaprendiendo.net - Formación Tic a medida</title>
+    <link href="~/carrusel/css/flexslider.css" rel="stylesheet" />
+    <link href="~/css/tripartita.css" rel="stylesheet" />
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/jquery.1.11.2min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/carrusel/js/jquery.flexslider.js"></script>
+</head>
+<body>
+    <header>
+        <!-- menu -->
+        <div class="cabecera">
+            <nav class='marino-bg'>
+                <div class="navbar space-between">
+                    <h1>desaprendiendo.net Formación Tic a medida</h1>
+                    <div id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                @if (ViewData["Menu"].ToString()=="Home")
+                                {
+                                    <a class="nav-link activo" href="/">Home</a>
+                                }
+                                else
+                                {
+                                    <a class="nav-link" href="/">Home</a>
+                                }
+                            </li>
+                            <li class="nav-item">
+                                @if (ViewData["Menu"].Equals("Tripartita"))
+                                {
+                                    <a id="Tripartita" class="nav-link activo" href="/tripartita">Fundae</a>
+                                }
+                                else
+                                {
+                                    <a id="Tripartita" class="nav-link" href="/tripartita">Fundae</a>
+
+                                }
+                            </li>
+                            <li class="nav-item">
+                                @if (ViewData["Menu"].Equals("Metodologia"))
+                                {
+                                    <a id="Metodologia" class="nav-link activo" href="/metodologia">Metodologia</a>
+                                }
+                                else
+                                {
+                                    <a id="Metodologia" class="nav-link" href="/metodologia">Metodologia</a>
+                                }
+                            </li>
+                            <li class="nav-item">
+                                @if (ViewData["Menu"].Equals("Cursos"))
+                                {
+                                    <a class="nav-link activo" href="/categoria">Cursos</a>
+                                }
+                                else
+                                {
+                                    <a class="nav-link" href="/categoria">Cursos</a>
+                                }
+                            </li>
+                            <li class="nav-item">
+                                @if (ViewData["Menu"].Equals("Nosotros"))
+                                {
+                                    <a class="nav-link activo" href="/nosotros">Nosotros</a>
+                                }
+                                else
+                                {
+                                    <a class="nav-link" href="/nosotros">Nosotros</a>
+                                }
+                            </li>
+                            <br clear="all" />
+                        </ul>
+                        <a id="pull" href="#"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="wrapper"></div>
+        <!-- Fin menu -->
+        <!-- Logo y Buscador -->
+        <nav class="space-between total">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="/images/desaprendiendo2.png" alt="Icono de Marca">
+            </a>
+            <!-- Buscador -->
+            <form class="form-inline flex-start" asp-controller="SearchResults" asp-action="Index" method="post">
+                <div class="form-group">
+                    <input id="searchedText" name="searchedText" type="text" value="" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Búsqueda</button>
+                </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8LSSaz6ZNBJMvsFOxPYZhA9RxH0clpUJaNfEuJxG0de7Z7DvUKEQzGaNj6TiwhRtxuLHBbb1ZgGs0P43WlJAryI44Th_wHh0G-hyjMHMPWbAN39kQ0wYr3YJ27bQVDRGmOnE-LrEaiPAY9y10pqjzZE" />
+            </form>
+        </nav>
+        <!-- Fin Logo y Buscador -->
+    </header>
+
+    @RenderBody()
+
+    <footer class="card-footer space">
+        <div class="container">
+            <div class='space-between'>
+                <div class='flex-start'>
+                    &copy; 2020 Desaprendiendo | <a href="/CategoriaFront/Privacy">Privacy</a> | <a href="https://anasaci.com" target='_blank'>Diseño web anasaci</a>
+                </div>
+                <div>
+                    <a href="https://es.linkedin.com/company/desaprendiendozaragoza" target="_blank" title="Linkedin Desaprendiendo.net"><img src="~/images/linkedin_off.png" alt="Linkedin Desaprendiendo.net" onmouseover="this.src='/images/linkedin_on.png';" onmouseout="this.src='/images/linkedin_off.png';" /></a>
+                    <a href="https://www.facebook.com/desaprendiendo.net/" target="_blank" title="Facebook Desaprendiendo.net"><img src="~/images/facebook_off.png" alt="Facebook Desaprendiendo.net" onmouseover="this.src='/images/facebook_on.png';" onmouseout="this.src='/images/facebook_off.png';" /></a>
+                    <a href="https://www.youtube.com/channel/UCT52-j1BvF55-DaI-Q5LXcA" target="_blank" title="Youtube Desaprendiendo.net"><img src="~/images/youtube_off.png" alt="Youtube Desaprendiendo.net" onmouseover="this.src='/images/youtube_on.png';" onmouseout="this.src='/images/youtube_off.png';" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

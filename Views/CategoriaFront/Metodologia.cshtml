@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Desaprendiendo.Models.DomainModel.Categoria>
+
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<div class="container space">
+    <main>
+        <video src="~/metodologia.mp4" width='100%' height='auto' autoplay controls poster="~/images/infografia.jpg" >
+            Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.
+            <br>
+            La versión descargable está disponible en
+            <a href="URL">Enlace</a>.
+        </video>
+    </main>
+</div>
+<div class="container space">
+    <main>
+        <div class="flex-start-justi">
+            <div class="col-pq metod marino-bg">
+                <div class="card space-around">
+                    <img class="card-img-ico" src='~/images/ico-paso1.png' />
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                <p><b>ANÁLISIS Y OBJETIVOS</b></p>
+                                <p>
+                                    Definiremos juntos los objetivos que se persiguen para poder diseñar la formación a medida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq metod amarillo-bg">
+                <div class="card space-around">
+                    <img class="card-img-ico" src='~/images/ico-paso2.png' />
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                <p><b>DISEÑO FORMACIÓN</b></p>
+                                <p>
+                                    Diseño del programa adecuado y creación de los materiales específicos hechos a medida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq metod claro-bg">
+                <div class="card space-around">
+                    <img class="card-img-ico" src='~/images/ico-paso3.png' />
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                <p><b>PROCESO FORMATIVO</b></p>
+                                <p>
+                                    El proceso formativo podrá ser online, presencial o semipresencial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq metod gris-bg">
+                <div class="card space-around">
+                    <img class="card-img-ico" src='~/images/ico-paso4.png' />
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                <p class='negro-tx'><b>EVALUACIÓN Y SEGUIMIENTO</b></p>
+                                <p class='negro-tx'>
+                                    El último paso, será cerciorarnos de que los objetivos han sido conseguidos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+    </main>
+</div>
+<script>
+    var elemento = document.getElementById("Metodologia");
+    elemento.classList.add("active");
+</script>

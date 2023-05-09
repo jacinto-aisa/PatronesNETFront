@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ContentItem.ContentItem>
+<div class="container-fluid" style="margin-top: 10px;">
+    <div class="card-group">
+        @{ int contador = 0; }
+        <div class="row no-gutters">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card border-dark h-100 ">
+                        <a data-toggle="collapse" href="#collapse-example+@contador" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
+                            <i class="fa fa-chevron-down pull-right"></i> Pulsar para ver info detallada
+                        </a>
+                        <img class="card-img-top" src="data:image;base64,@System.Convert.ToBase64String(item.Imagen)" style="height: 150px;" alt="Card image">
+
+                        <div class="card-header">
+                            <a class="card-link stretched-link" asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>
+                                <p> @item.Titulo</p>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example+@contador" class="collapse" aria-labelledby="heading-example">
+                                    <p> @Html.Raw(item.ContenidoHTML) </p>
+                                </div>
+                            </div>
+                        </div>
+                        @{ contador++;}
+                    </div>
+                </div>
+                <br />
+            }
+        </div>
+    </div>
+</div>
+

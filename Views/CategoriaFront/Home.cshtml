@@ -1,0 +1,200 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<!-- Carousel portada -->
+@await Component.InvokeAsync("CarrusellBannerComponent", new Banner())
+<!-- Fin Carrusel portada -->
+<!-- Aquí cursos destacados -->
+<div class="container space">
+    <main>
+        <h3 class='cab-tit'>Cursos destacados</h3>
+        <div class="space-around">
+            <div class="col-pq claro-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/ModulosFront/index/4">
+                            <p> Fundamentos de Programación</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                El objetivo de POO es catalogar y diferenciar el código, en base a estructuras jerárquicas dependientes, al estilo de un árbol genealógico.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/ModulosFront/index/4'>+</a>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq marino-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/CursosFront/index/4">
+                            <p> Desarrollo</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                <p> <p>En la categoria de desarrollo incluimos la ense&ntilde;&aacute;nza tanto de <em>lenguajes</em> como de <em>frameworks</em> que nos permiten la construcci&oacute;n de aplicaciones en diferentes entornos, <strong>Web</strong> (HTML5, javascript y librerias), <strong>servidor</strong> (ASP.NET, JSP, PHP) y <strong>dispositivos m&oacute;viles</strong> (Xamarin, Aplicaciones responsivas).&nbsp;</p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/CursosFront/index/4'>+</a>
+                </div>
+            </div>
+            <br />
+            @*<div class="col-pq claro-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/SubCategoriasFront/index/3">
+                            <p> BI</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" aria-labelledby="heading-example">
+                                <p> <p>Todos los empresarios quieren ver sus datos y poder analizarlos <strong>desde su propia visi&oacute;n</strong>.&nbsp;En este apartado se unen herramientas para la visualizaci&oacute;n de informes, as&iacute; como herramientas orientadas hac&iacute;a la limpieza, organizaci&oacute;n y agrupado de la informaci&oacute;n con el fin de proporcionar una mejor visi&oacute;n  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/SubCategoriasFront/index/3'>+</a>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq marino-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/SubCategoriasFront/index/4">
+                            <p> Dynamics Nav</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+                                <p> Cursos orientados, tanto a usuarios iniciales, usuarios avanzados, administradores del mismo, parametrizadores del sistema as&iacute; como la ense&ntilde;anza de la programaci&oacute;n en CSide y extensiones en .NET.&nbsp;<strong>Esta formaci&oacute;n se puede complementar con cursos de explotaci&oacute;n de datos</strong>, como leer los datos de dynamics desde otra plataforma. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/SubCategoriasFront/index/1'>+</a>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq claro-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/SubCategoriasFront/index/5">
+                            <p> SQL Server</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+                                <p> <p>Cursos profesionales sobre todo el conjunto de versiones y plataformas de SQL Server. Instalaci&oacute;n, desarrollo de DataMarts, consultas, lenguaje TSQL, realizaci&oacute;n de funciones, procedimientos almacenados, vistas, vistas indexadas, organizaci&oacute;n fisica de la base de datos. Realizaci&oacute;n de cursos orientados hac&iacute;a la <strong>optimizaci&oacute;n del rendimiento de las consultas sobre la base de datos</strong></p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/SubCategoriasFront/index/3'>+</a>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq marino-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/SubCategoriasFront/index/6">
+                            <p> SEO</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+                                <p>
+                                    Las plataformas digitales, tiendas online, personas de dise&ntilde;o del producto, hac&iacute;a ese p&uacute;blico objetivo van dirigidos estos cursos, dise&ntilde;o atractivo del producto, capacidades de un buen ecomerce, publicitaci&oacute;n del sitio web, realizaci&oacute;n de campa&ntilde;as.
+                                    Especializados en <strong>cursos sobre google analytics</strong>, analizando y ense&ntilde;ando a analizar los datos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/SubCategoriasFront/index/1'>+</a>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq claro-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/SubCategoriasFront/index/7">
+                            <p> Ofimatica</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+                                <p>
+                                    Cursos de manejo de procesadores de textos, libros de c&aacute;lculo, presentaciones, gestores de bases de datos.&nbsp;
+                                    <strong>Excel, Word, Access y Powerpoint, tanto en su versi&oacute;n microsoft, como openoffice</strong> dejar&aacute;n de tener secretos para usted, prepar&eacute; a sus mandos intermedios con esta herramienta que aumentar&aacute; la productividad de sus empleados.
+                                </p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/SubCategoriasFront/index/3'>+</a>
+                </div>
+            </div>
+            <br />
+            <div class="col-pq marino-bg">
+                <div class="card space-around">
+                    <div class="card-header">
+                        <a class="card-link" href="/SubCategoriasFront/index/8">
+                            <p> BigData</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+                                <p> Machine Learning, Algoritmos, Redes convolucionales, an&aacute;lisis de la cesta de la compra, regresi&oacute;n lineal, previsi&oacute;n de fallos en producci&oacute;n.<strong>Estos cursos proporcionan a las empresas suficientes herramientas tecnol&oacute;gicas para desarrollar todos estos avances</strong> que nos permitir&aacute;n destacar sobre nuestra competencia. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='botmas'>
+                    <a href='/SubCategoriasFront/index/1'>+</a>
+                </div>
+            </div>*@
+            <br />
+        </div>
+    </main>
+</div>
+
+@*<div id="cookieConsent" class="alert alert-dismissible fade show" role="alert">
+        <div class='alert-info container'>
+            Debemos de pedirle su consentimiento para poder aceptar las cookies de nuestro sitio web.
+            Dichas cookies el único fin de poder monitorizar el uso de la página por parte de nuestros especialista en SEO y no serán usados para otros fines.<br>
+            <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close" data-cookie-string=".AspNet.Consent=yes; expires=Tue, 30 Nov 2021 15:20:57 GMT; path=/; secure; samesite=none">
+                <span aria-hidden="true">Aceptar</span>
+            </button>
+        </div>
+    </div>
+    <script>
+            (function () {
+                var button = document.querySelector("#cookieConsent button[data-cookie-string]");
+                button.addEventListener("click", function (event) {
+                    document.cookie = button.dataset.cookieString;
+                }, false);
+            })();
+    </script>*@
+<!-- Ventana cookies -->

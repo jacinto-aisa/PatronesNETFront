@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ModuloComp.ModuloComp>
+<div class='col-sm-0 space-bot'>
+    @foreach (var item in Model)
+    {
+        <div class="accordion-container">
+            <a href="#" class="accordion-titulo">
+                <span class="toggle-icon"></span> <h2>@item.TituloModulo</h2>
+            </a>
+            <div class="accordion-content">
+                <div class="curse-body">
+                    <div class="card-text negro-tx">
+                        <p> @Html.Raw(item.DescripcionModulo) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Desaprendiendo.Models.DomainModel.Curso>
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+
+    @await Component.InvokeAsync("BreadCumComponent", Model.ToList().First())
+
+    @if ((Model.ToList().First()).Id == 32)
+    {
+        @await Component.InvokeAsync("DeckCardComponentDigitalizacion", Model.ToList().First())
+    }
+    else
+    {
+        @await Component.InvokeAsync("DeckCardComponent", Model.ToList().First())
+    }
+
+
+
+
+
+

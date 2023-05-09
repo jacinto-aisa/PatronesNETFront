@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.BreadCum.Bread>
+<nav class="space-between total">
+    <ol class="breadcrumb">
+        @foreach (var item in Model)
+        {
+            <li class="breadcrumb-item">
+                <a asp-controller=@item.Controlador asp-action=@item.Accion
+                   asp-route-id=@item.ParametroId>@item.Titulo</a>
+            </li>
+        }
+
+    </ol>
+</nav>
+

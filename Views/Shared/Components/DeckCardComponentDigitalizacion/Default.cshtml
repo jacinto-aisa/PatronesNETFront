@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ContentItem.ContentItem>
+<div class="container space">
+    <main>
+        <div class="flex-start-justi">
+            @foreach (var item in Model)
+            {
+                <div class="col-pq2 claro-bg" style="opacity: 0.8">
+                    <div class="card space-around">
+                        <div class="card-header">
+                            <a class="card-link stretched-link" asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>
+                                <p> @item.Titulo</p>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+                                    <p> @Html.Raw(item.ContenidoHTML) </p>
+                                </div>
+                            </div>
+                            <div class='botmas'>
+                                <a class="card-link" asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>+</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
+</div>
+
+

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Analytics -->
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/1328B9C1-5AC5-BF4B-9615-51AEE28F9769/main.js" charset="UTF-8"></script>
+    <link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/BCAA219C-BED5-AA4C-BAE2-5FA9FAE3E39D/abn/main.css" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-115866163-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desaprendiendo.net - Formación Tic a medida</title>
+    <link href="~/css/tripartita.css" rel="stylesheet" />
+    <!-- menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('div ul');
+            menuHeight = menu.height();
+
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    </script>
+    <!-- Carousel Portada -->
+    <link href="~/css/flexslider.css" rel="stylesheet" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    <script src="~/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider-por').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                itemMargin: 0,
+                minItems: 1,
+            });
+        });
+    </script>
+    <!-- Carousel -->
+    <link rel="stylesheet" href="css/flexslider2.css" type="text/css" media="screen" />
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    <script defer src="carrusel/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 350,
+                itemMargin: 5,
+            });
+        });
+    </script>
+    <link href="~/css/site.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <header>
+        <!-- menu -->
+        <nav class='marino-bg'>
+            <div class="navbar space-between">
+                <h1>desaprendiendo.net Formación Tic a medida</h1>
+                <div id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link activo" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tripartita">Tripartita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/metodologia">Metodologia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/categoria">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/nosotros">Nosotros</a>
+                        </li>
+                        <br clear="all" />
+                    </ul>
+                    <a id="pull" href="#"></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin menu -->
+        <!-- Logo y Buscador -->
+        <nav class="space-between total">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="/images/desaprendiendo2.png" alt="Icono de Marca">
+            </a>
+            <!-- Buscador -->
+            <form class="form-inline flex-start" asp-controller="SearchResults" asp-action="Index" method="post">
+                <div class="form-group">
+                    <input id="searchedText" name="searchedText" type="text" value="" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Búsqueda</button>
+                </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8LSSaz6ZNBJMvsFOxPYZhA9RxH0clpUJaNfEuJxG0de7Z7DvUKEQzGaNj6TiwhRtxuLHBbb1ZgGs0P43WlJAryI44Th_wHh0G-hyjMHMPWbAN39kQ0wYr3YJ27bQVDRGmOnE-LrEaiPAY9y10pqjzZE" />
+            </form>
+        </nav>
+        <!-- Fin Logo y Buscador -->
+    </header>
+
+    @RenderBody()
+
+    <footer class="card-footer space">
+        <div class="container">
+            &copy; 2020 Desaprendiendo | <a href="/CategoriaFront/Privacy">Privacy</a><br>
+            <a href="https://anasaci.com" target='_blank'>Diseño web anasaci</a>
+        </div>
+    </footer>
+
+    @*@RenderSection("Scripts", required: false)*@
+
+</body>
+</html>

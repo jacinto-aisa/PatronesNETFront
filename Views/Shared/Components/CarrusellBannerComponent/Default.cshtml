@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ContentItem.ContentItem>
+<div class='space-bot'>
+    <div class='slider sfp'>
+        <div class='flexslider-por'>
+            <ul class='slides'>
+                @foreach (var item in Model)
+                {
+                    <li>
+                        <div class='col-sg-4'>
+                            <div class="card-bodyp">
+                                <div class='cover'>
+                                    <h4 class="card-titlep">
+                                        @item.Titulo
+                                    </h4>
+                                    <p class="card-textp">
+                                        @item.ContenidoHTML
+                                    </p>
+                                    <h5 class="card-botp">
+                                        <a href="@item.Controlador" class="card-bot-inp">
+                                            + info
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-imgp">
+                                <!-- El tamaño de la imagen debe ser de 600px ancho x 400px alto-->
+                                <img src="data:image;base64,@System.Convert.ToBase64String(item.ImagenMiniatura)" alt="">
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+

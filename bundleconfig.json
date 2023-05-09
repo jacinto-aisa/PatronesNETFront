@@ -1,0 +1,24 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/carrusel/css/flexslider.css",
+      "wwwroot/css/tripartita.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/bootstrap.js",
+      "wwwroot/js/jquery.1.11.2.min.js",
+      "wwwroot/js/site.js",
+      "wwwroot/carrusel/js/jquery.flexslider.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "includeInProject": true,
+    "sourceMap": false
+  }
+]

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.BreadCum.Bread>
+<div class="container-fluid">
+    <div class="card-deck">
+        <div class="row">
+            
+            @foreach (var item in Model)
+            {
+                <div class="card border-dark rounded mb-0" >
+                    <div class="card-header">
+                        <a class="stretched-link card-text" asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>@item.Titulo</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
